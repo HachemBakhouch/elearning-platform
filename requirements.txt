@@ -1,0 +1,48 @@
+# Plateforme E-Learning - Requirements
+# Système de quiz éducatif multilingue
+# Version: 1.0.0
+# Python: 3.13+
+
+# Core Framework
+Django==5.2.4
+
+# Database & Models
+django-model-utils==5.0.0
+
+# Image Processing
+Pillow==11.3.0
+
+# Configuration Management
+python-decouple==3.8
+
+# Development Tools (optional)
+django-debug-toolbar==4.4.6
+
+# Production Server (for deployment)
+gunicorn==21.2.0
+
+# Static Files (for production)
+whitenoise==6.8.2
+
+# Database Drivers (choose one for production)
+# PostgreSQL (recommended)
+# psycopg2-binary==2.9.9
+
+# MySQL (alternative)
+# mysqlclient>=2.2.0
+
+# API Framework (for future mobile app)
+# djangorestframework==3.14.0
+
+# Multi-language Support (for future enhancement)
+# django-modeltranslation==0.18.11
+
+# Testing (development)
+# pytest==7.4.4
+# pytest-django==4.8.0
+# factory-boy==3.3.0
+
+# Code Quality (development)
+# black==23.12.1
+# isort==5.13.2
+# flake8==6.1.0
