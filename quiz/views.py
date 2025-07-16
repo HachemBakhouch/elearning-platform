@@ -162,7 +162,7 @@ class QuizTake(FormView):
     def get_form(self, *args, **kwargs):
         if self.logged_in_user:
             self.question = self.sitting.get_first_question()
-            self.progress = self.sitting.progress()
+            self.progress = self.sitting.get_percent_correct
         else:
             self.question = self.anon_next_question()
             self.progress = self.anon_sitting_progress()
@@ -232,7 +232,7 @@ class QuizTake(FormView):
         results = {
             'quiz': self.quiz,
             'score': self.sitting.get_current_score,
-            'max_score': self.sitting.get_max_score,
+            'max_score': self.sitting.quiz.get_max_score,
             'percent': self.sitting.get_percent_correct,
             'sitting': self.sitting,
             'previous': self.previous,

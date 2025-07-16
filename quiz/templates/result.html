@@ -20,7 +20,7 @@
   {% include 'correct_answer.html' %}
   <p><strong>{% trans "Explanation" %}:</strong></p>
   <div class="well " style="background-color: #fcf8e3;">
-    <p>{{ previous.previous_question.explanation }}</p>
+    <p>{{ previous.previous_question.explanation|linebreaksbr|safe }}</p>
   </div>
   <hr>
 
@@ -86,7 +86,7 @@
 
 	  <p><strong>{% trans "Explanation" %}:</strong></p>
 	  <div class="well " style="background-color: #fcf8e3;">
-		<p>{{ question.explanation|safe }}</p>
+		<p>{{ question.explanation|linebreaksbr|safe }}</p>
 	  </div>
 
 	  <hr>
